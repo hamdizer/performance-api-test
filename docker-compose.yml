@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  api-gateway:
+    build: .
+    container_name: high-concurrency-api-gateway
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+      PORT: 8000
+    command: ["./start.sh"]
