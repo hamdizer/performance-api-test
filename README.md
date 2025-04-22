@@ -10,7 +10,7 @@ request performance test
 ### Setup
 Clone the repository and install dependencies:
 
-````bash
+```bash
 git clone https://github.com/hamdizer/performance-api-test.git
 cd your-repo
 npm install
