@@ -1,5 +1,5 @@
 ## Description
-Caculator
+request performance test
 ## Installation
 
 ### Prerequisites
@@ -10,37 +10,26 @@ Caculator
 ### Setup
 Clone the repository and install dependencies:
 
-\`\`\`bash
-git clone https://github.com/yourusername/your-repo.git
+${````bash`}
+git clone https://github.com/hamdizer/performance-api-test.git
 cd your-repo
 npm install
-\`\`\`
+${`````}
 
-## Usage
-
+## Steps to Run the Project
 ### In Development:
-Run the development server with hot-reload:
-
-\`\`\`bash
-npm run dev
-\`\`\`
-The application will be available at http://localhost:3000
+Open **two terminals**:
+1. First terminal:
+    ${````bash`}
+    npm start
+    ${`````}
+2. Second terminal:
+    ${````bash`}
+    npm run stress-test
+    ${`````}
+npm start process must be executed before npm run stress-test process
 
 ### Using Docker:
-Build the application and start the Docker container:
-
-\`\`\`bash
-npm run build
+${````bash`}
 docker-compose up --build
-\`\`\`
-The application will be available at http://localhost:3000
-
-## Project Structure
-\`\`\`
-├── components/     # React components
-├── pages/          # Next.js pages
-├── public/         # Static assets
-├── styles/         # CSS/SCSS files
-├── Dockerfile      # Docker configuration
-└── docker-compose.yml # Docker Compose configuration
-\`\`\`
+${`````}
