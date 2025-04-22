@@ -20,7 +20,7 @@ npm install
 ### In Development:
 Open **two terminals**:
 1. First terminal:
-    ````bash
+    ```bash
     npm start
     ```
 2. Second terminal:
