@@ -10,26 +10,26 @@ request performance test
 ### Setup
 Clone the repository and install dependencies:
 
-${````bash`}
+````bash
 git clone https://github.com/hamdizer/performance-api-test.git
 cd your-repo
 npm install
-${`````}
+```
 
 ## Steps to Run the Project
 ### In Development:
 Open **two terminals**:
 1. First terminal:
-    ${````bash`}
+    ````bash
     npm start
-    ${`````}
+    ```
 2. Second terminal:
-    ${````bash`}
+    ```bash
     npm run stress-test
-    ${`````}
+    ```
 npm start process must be executed before npm run stress-test process
 
 ### Using Docker:
-${````bash`}
+```bash
 docker-compose up --build
-${`````}
+```
